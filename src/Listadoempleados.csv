@@ -1,0 +1,4 @@
+cargo;cedula;nombre;apellidos;ciudad;edad;peso;email;celular,direccion
+administrador;1112342312;ruben;rodriguez;cali;2016-11-17;0;ruben.666@live.com;1231231212;cra 32 # 21-123
+gerente;123123;ruben;asdasd;cali;2016-11-24;12;ruben.666@live.com;1231232123;cra 32 # 21
+jefe;1112342312;mateo;ospina;cali;2016-11-25;76;rolito.666@live.com;1231231212;cra 32 # 21-123

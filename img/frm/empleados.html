@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+	   <title> Empleados</title>
+	    <LINK REL=StyleSheet HREF="../css/estilosRegistro.css" TYPE="text/css" MEDIA=screen>
+		<script src="../js/validarEmpleados.js"></script>
+		<script src="../js/ReporteEmpleados.js"></script> 
+    </head>
+	<body>
+		<form action="../src/empleados.php" method="post" class="form-register" onsubmit="return validar();">
+		   <h2 class="form__titulo"> Registro Empleados </h2>
+		   <div class="contenedor-inputs">
+		   <input type="text" id="cargo" name="cargo" placeholder="Cargo" class="input-50" required >
+		   <input type="text" id="cedula" name="cedula" placeholder="Cedula" class="input-50" required >
+		   <input type="text" id="nombre"name="nombre" placeholder="Nombre" class="input-50" required>
+		   <input type="text" id="apellidos"name="apellidos" placeholder="Apellidos"class="input-50" required>
+		   <input type="text" id="ciudad"name="ciudad" placeholder="Ciudad" class="input-50" required>
+		   <input type="date" id="edad" name="edad" placeholder="Edad" class="input-50" required>
+		   <input type="text" id="peso"name="peso" placeholder="Peso" class="input-50" required>
+		   <input type="email" id="email"name="email" placeholder="Email" class="input-100" required >
+		   <input type="text" id="celular"name="celular" placeholder="Celular" class="input-100" required>
+		   <input type="text" id="direccion"name="direccion" placeholder="Direccion" class="input-100" required>
+		   <input type="submit" value="Registrar" class="btn-enviar">
+		      <div class="contenedor-inputs">
+					<img src="../img/pdf.gif" onClick="generarPDF3();">
+					<img src="../img/logoexcel.jpg" onClick="generarExcel3();">
+					<img src="../img/logoGraficoBarra.png" onClick="generarGraficoBarra3();">
+					<img src="../img/logoGraficoTorta.png" onClick="generarGraficoTorta()3;">
+								 
+			   </div>
+		    </div>
+		</form>	
+	</body>   
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+	   <title> encuesta</title>
+	    <LINK REL=StyleSheet HREF="../css/estilosEncuesta.css" TYPE="text/css" MEDIA=screen>
+		<script src="../js/validarEncuesta.js"></script>
+		<script src="../js/ReporteEncuesta.js"></script> 
+    </head>
+	<body>
+	    <div data-role="page" id="encuesta">
+	    <form action="../src/encuesta.php" method="post" class="form-register" onsubmit="return validar();">
+		    <h2 class="form__titulo"> Encuesta </h2>
+		       <div class="contenedor-inputs">
+		  <input type="text" id="cedula" name="cedula" placeholder="Cedula" class="input-50" required >
+		  <input type="text" id="nombre"name="nombre" placeholder="Nombre" class="input-50" required>
+		  <center> <h2> le gusto la pagina </h2> </center>
+		  <br>  <select id="respuesta" name="respuesta" class="input-100">
+          <option value="si">Si</option> 
+          <option value="No">No</option> 
+          </select> </br> 
+		  <h3> de 1 a 5 cuanto le coloca a la pagina </h3>
+		  <br>  <select id="puntos" name="puntos" class="input-100">
+          <option value="1">1</option> 
+          <option value="2">2</option> 
+          <option value="3">3</option>
+          <option value="4">4</option> 
+          <option value="5">5</option> 
+           </select> </br> 
+		   <h3> ¿Por Que? </h3>
+		    <textarea name="observaciones" id="observaciones" rows="10" cols="40" class="input-100" placeholder="Escriba los Comentarios Aqui"></textarea>
+		   <input type="submit" value="Votar" class="btn-enviar">
+		   <div class="contenedor-inputs">
+					<img src="../img/logoGraficoBarra.png" onClick="generarGraficoBarra4();">
+					<img src="../img/logoGraficoTorta.png" onClick="generarGraficoTorta4();">
+								 
+			 </div>
+		      
+		    </div>
+		</form>	
+	</body>   
+</html>

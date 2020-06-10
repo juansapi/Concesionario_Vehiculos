@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+	   <title> Cotizacion</title>
+	    <LINK REL=StyleSheet HREF="../css/estilosCotizacion.css" TYPE="text/css" MEDIA=screen>
+		<script src="../js/validarCotizacion.js"></script>
+		<script src="../js/ReporteCotizacion.js"></script> 
+    </head>
+	<body>
+	    <h1> Cotizacion</h1>
+		<form action="../src/cotizacion.php" method="post" class="form-register" onsubmit="return validar();">
+		   <h2 class="form__titulo"> Llene la informacion</h2>
+		   <div class="contenedor-inputs">
+		  <br>  <select id="autos" name="autos" class="input-50">
+           <option value="sparklife">sparklife</option> 
+           <option value="sparkGT">sparkGT</option> 
+           <option value="sail">sail</option>
+           <option value="onix">onix</option> 
+           <option value="cobalt">cobalt</option> 
+           <option value="cruze">cruze</option> 
+		   <option value="camaro">camaro</option> 
+           </select> </br> 
+		   <br>
+		   <input type="text" id="cedula" name="cedula" placeholder="Cedula" class="input-50" required > <br>
+		   <input type="text" id="nombre"name="nombre" placeholder="Nombre" class="input-50" required>
+		   <input type="text" id="apellidos"name="apellidos" placeholder="Apellidos"class="input-50" required>
+		   <input type="email" id="email"name="email" placeholder="Email" class="input-100" required >
+		   <input type="text" id="celular"name="celular" placeholder="Celular" class="input-100" required>
+		   <input type="text" id="ciudad"name="ciudad" placeholder="Ciudad" class="input-50" required>
+           <textarea name="observaciones" id="observaciones" rows="10" cols="40"  placeholder="Escriba los Comentarios Aqui"></textarea>
+		   <input type="submit" value="Solicitar Cotizacion" class="btn-enviar">
+		      <div class="contenedor-inputs">
+					<img src="../img/pdf.gif" onClick="generarPDF2();">
+					<img src="../img/logoexcel.jpg" onClick="generarExcel2();">
+					<img src="../img/logoGraficoBarra.png" onClick="generarGraficoBarra2();">
+					<img src="../img/logoGraficoTorta.png" onClick="generarGraficoTorta2();">
+								 
+			   </div>
+		    </div>
+		</form>	
+	</body>   
+</html>

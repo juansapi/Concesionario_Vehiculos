@@ -1,0 +1,76 @@
+<!DOCTYPE html  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <script type="text/javascript" src="jquery.fixedMenu.js"></script>	
+	<script type="text/JavaScript" src="../js/Sesiones.js"></script> 	
+	<script type="text/JavaScript" src="../js/Funciones.js"></script> 				
+	<script type="text/JavaScript" src="../js/Menu.js"></script> 	
+    <meta charset="UTF-8">
+	<title>Menu</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<link  rel="stylesheet" href="../css/estilos1.css">
+	<link  rel="stylesheet" href="../css/fonts.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/main.js"></script>
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+   <script src="../js/jquery.flexslider.js"></script>
+   <script type="text/javascript" charset="utf-8">
+   //funcion que permite hacer que el slider tenga movimiento https://woocommerce.com/flexslider/ 
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+  
+  
+</script>
+	</head>
+	<body onload="getInfoSesion(); validarSesion();">	
+            <header>
+			      <div class="menu_bar">
+				       <a href="#" class="bt-menu"> <span class="icon-paragraph-justify"> </span>Menu</a>
+				  </div>
+				  
+				  <nav>
+				      <ul>
+					      <li class="submenu">
+						      <a href="#"><span class="icon-home3"></span>Sedes <span class="caret icon-circle-down"> </span></a>
+							  <ul class="children">
+							       <li><a href="#">Cali    <span class="icon-office"></a></li>
+								   <li><a href="#">Palmira <span class="icon-office"></a></li>
+							  </ul>
+						  </li>
+						  <li><a href="../frm/empleados.html"><span class="icon-user-tie"></span>Empleados</a></li>
+						  <li><a href="../frm/registro.html"><span class="icon-list"></span>registro</a></li>
+						  <li><a href="../frm/autos.html"><span class="icon-cart"></span>Autos</a></li>
+						  <li><a href="../index.php"><span class="icon-switch"></span>Cerrar Sesion <span class="caret icon-checkmark" onClick="removeSesion('sessionUsuario')"></span> </a></li>
+			</header>
+			
+			   <div class="flexslider">
+			 <center>   <ul class="slides">
+			          <li>
+				      <img src="../img/gt.jpg" alt="">
+					  <section class="flex-caption">
+					  <p> GT 2016 TOP MAS VENDIDOS </p>
+					  </section>
+				    </li>
+					<li>
+				      <img src="../img/sail.jpg" alt="">
+					  <section class="flex-caption">
+					  <p> SAIL 2016 TOP MAS VENDIDOS </p>
+					  </section>
+				    </li>
+					<li>
+				      <img src="../img/sparklife.jpg" alt="">
+					  <section class="flex-caption">
+					  <p> SPARK LIFE 2016 TOP MAS VENDIDOS </p>
+					  </section>
+				    </li>
+				</ul> </center>
+				</div>
+				
+				
+				<div data-role="footer" align="center">
+			              <h4>Todos Los Derechos Reservados | Daniel Mateo Vargas Ospina &copy</h4>
+	</div>
+	</body>
+	</html>

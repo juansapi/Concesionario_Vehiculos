@@ -1,0 +1,40 @@
+<html> 
+<head> 
+<title>Bienvendido a mi website</title> 
+<style type="text/css"> 
+<!-- 
+.Estilo1 { 
+font-size: 36px; 
+color: #0000FF; 
+} 
+.Estilo2 { 
+font-size: 24px; 
+color: #3399CC; 
+} 
+.Estilo3 {color: #999999} 
+--> 
+</style> 
+</head> 
+
+<body> 
+<table width="95%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#6699CC"> 
+<tr> 
+<td colspan="3"><p> </p> 
+<p align="center" class="Estilo1">Aqui podria ir algun banner o nombre de la website </p> 
+</td> 
+</tr> 
+<tr> 
+<td width="30%" align="center" valign="middle"><p> </p> 
+<p align="center" class="Estilo2">Aqui puede venir un menu o publisidad </p> 
+</td> 
+<td width="45%"><div align="center" class="Estilo2">Aqui puedes poner informacion de algo </div></td> 
+<td width="25%"><div align="center"> 
+<? include'encuesta.php'; // aqui incluyo a index.php mis preguntas de mi encuesta.... es mejor tenerlo asi para trabajar mas ordenado en otra pagina y no en esta misma.?> 
+</div></td> 
+</tr> 
+<tr> 
+<td colspan="3"><div align="right" class="Estilo3">aqui pondria los derechos reservados ® <? echo''.$fecha=strftime( "%Y", time() );?></div></td> 
+</tr> 
+</table> 
+</body> 
+</html> 
